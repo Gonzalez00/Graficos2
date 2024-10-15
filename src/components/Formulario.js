@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
-import db from '../../Firebase/FirebaseConfig';
+import db from '../../Firebase/FirebaseConfig'
 import { collection, addDoc } from "firebase/firestore"; 
 
 export default function Formulario({setBandera}) {
