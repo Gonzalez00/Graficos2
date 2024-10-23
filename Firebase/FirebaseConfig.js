@@ -2,21 +2,17 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDLjpYfNtQPDzAmlAWmFXIilqS7GGRzvlk",
-    authDomain: "startcap-ef1bf.firebaseapp.com",
-    projectId: "startcap-ef1bf",
-    storageBucket: "startcap-ef1bf.appspot.com",
-    messagingSenderId: "279595376753",
-    appId: "1:279595376753:web:19a9fbadd0fea95f9abbd0",
-    measurementId: "G-GNGDKNF149"
-  };
-
+  apiKey: "AIzaSyBdRnDhOW8Bkfjg6dmPBhWk2ovRxOoAK0s",
+  authDomain: "proyecto-estadisticas-763cd.firebaseapp.com",
+  projectId: "proyecto-estadisticas-763cd",
+  storageBucket: "proyecto-estadisticas-763cd.appspot.com",
+  messagingSenderId: "427368046259",
+  appId: "1:427368046259:web:fad847f86231cfaf7f9ac6",
+  measurementId: "G-DMNSQTXQ3K"
+};
 
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 
 export default db;
-
-
-
