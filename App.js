@@ -67,7 +67,7 @@ export default function Graficos() {
             nombres.push(nombre); // Agrega nombre a la lista
             salarios.push(salario); // Agrega edad a la lista
         });
-
+        
         // Actualiza el estado con el formato requerido
         setDataSalarios({
           labels: nombres,
@@ -120,7 +120,7 @@ export default function Graficos() {
             legendFontSize: 12
           }
         ];
-
+          
         totalPersonas = masculino + femenino;
 
         const progresos = [masculino/totalPersonas, femenino/totalPersonas]
@@ -146,11 +146,13 @@ export default function Graficos() {
         <Formulario setBandera={setBandera}/> 
         <GraficoSalarios dataSalarios={dataSalarios}/>
         <GraficoBezier dataSalarios={dataSalarios}/>
-        <GraficoGeneros dataGeneros={dataGeneros}/>
+
         <GraficoProgreso 
           dataProgreso={dataProgreso}
           colors={['rgba(131, 167, 234, 0.5)', 'rgba(255, 105, 180, 0.5)']}   
         />
+
+        <GraficoGeneros dataGeneros={dataGeneros}/>
         <GraficoReporteEnfermedades dataReporteEnfermedades={dataReporteEnfermedades}/>
       </ScrollView>
 
@@ -171,4 +173,4 @@ const styles = StyleSheet.create({
     marginTop: 10,
     padding: 10,
   },
-}); 
+});
